@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CatMedia.h"
 #import "CatMediaType.h"
 #import "CatMediaSelectType.h"
 

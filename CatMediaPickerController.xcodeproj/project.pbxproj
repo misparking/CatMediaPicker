@@ -23,6 +23,7 @@
 		D0BE700D1B79A8FC00667242 /* CatPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE70011B79A8FC00667242 /* CatPhotoPreviewController.m */; };
 		D0BE700E1B79A8FC00667242 /* Correct.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BE70021B79A8FC00667242 /* Correct.png */; };
 		D0BE700F1B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0BE70031B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings */; };
+		D0BE70151B79DC3200667242 /* ResultPhotosCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE70141B79DC3200667242 /* ResultPhotosCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		D0BE70021B79A8FC00667242 /* Correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Correct.png; sourceTree = "<group>"; };
 		D0BE70041B79A8FC00667242 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CatMediaPickerControllerLocalizable.strings; sourceTree = "<group>"; };
 		D0BE70051B79A8FC00667242 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CatMediaPickerControllerLocalizable.strings"; sourceTree = "<group>"; };
+		D0BE70131B79DC3200667242 /* ResultPhotosCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultPhotosCollectionViewCell.h; sourceTree = "<group>"; };
+		D0BE70141B79DC3200667242 /* ResultPhotosCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultPhotosCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				D0BE6FA91B79A81200667242 /* AppDelegate.m */,
 				D0BE6FAB1B79A81200667242 /* ViewController.h */,
 				D0BE6FAC1B79A81200667242 /* ViewController.m */,
+				D0BE70131B79DC3200667242 /* ResultPhotosCollectionViewCell.h */,
+				D0BE70141B79DC3200667242 /* ResultPhotosCollectionViewCell.m */,
 				D0BE6FAE1B79A81200667242 /* Main.storyboard */,
 				D0BE6FB11B79A81200667242 /* Images.xcassets */,
 				D0BE6FA41B79A81200667242 /* Supporting Files */,
@@ -277,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BE70151B79DC3200667242 /* ResultPhotosCollectionViewCell.m in Sources */,
 				D0BE700D1B79A8FC00667242 /* CatPhotoPreviewController.m in Sources */,
 				D0BE6FAD1B79A81200667242 /* ViewController.m in Sources */,
 				D0BE70081B79A8FC00667242 /* CatPhotoAlbumController.m in Sources */,
@@ -418,6 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CatMediaPickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -429,6 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CatMediaPickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -487,6 +495,7 @@
 				D0BE6FC61B79A81200667242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0BE6FC71B79A81200667242 /* Build configuration list for PBXNativeTarget "CatMediaPickerControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				D0BE6FC91B79A81200667242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

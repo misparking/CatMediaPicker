@@ -8,9 +8,13 @@
 
 #import "CatMedia.h"
 
-@implementation CatMedia {
+@interface CatMedia () {
   ALAsset *_sourceAsset;
 }
+
+@end
+
+@implementation CatMedia
 
 - (instancetype)initWithAsset:(ALAsset *)asset {
   self = [super init];

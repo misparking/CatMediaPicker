@@ -91,7 +91,7 @@ static NSString *const PhotoPickerCellIdentifier = @"PhotoPickerCellIdentifier";
              target:self
              action:@selector(photosPreviewBarButtonAction)];
   [_photosPreviewBarButton setEnabled:NO];
-  [_photosPreviewBarButton setEnabled:NO];
+  [_photosSaveBarButton setEnabled:NO];
   [functionToolbar setItems:@[ _photosPreviewBarButton ] animated:YES];
 }
 
