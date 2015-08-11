@@ -1,0 +1,10 @@
+/* 
+  CatMediaPickerControllerLocalizable.strings
+  CatImagePickerController
+
+  Created by K-cat on 15/8/8.
+  Copyright (c) 2015年 K-cat. All rights reserved.
+*/
+
+"ControllerTitle_PhotoPickerAlbum" = "相册";
+"PhotosPreviewButton" = "预览";

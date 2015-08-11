@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0BE6FA71B79A81200667242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FA61B79A81200667242 /* main.m */; };
+		D0BE6FAA1B79A81200667242 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FA91B79A81200667242 /* AppDelegate.m */; };
+		D0BE6FAD1B79A81200667242 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FAC1B79A81200667242 /* ViewController.m */; };
+		D0BE6FB01B79A81200667242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0BE6FAE1B79A81200667242 /* Main.storyboard */; };
+		D0BE6FB21B79A81200667242 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BE6FB11B79A81200667242 /* Images.xcassets */; };
+		D0BE6FC11B79A81200667242 /* CatMediaPickerControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FC01B79A81200667242 /* CatMediaPickerControllerTests.m */; };
+		D0BE70061B79A8FC00667242 /* CatMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FF11B79A8FC00667242 /* CatMedia.m */; };
+		D0BE70071B79A8FC00667242 /* CatMediaPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FF31B79A8FC00667242 /* CatMediaPickerController.m */; };
+		D0BE70081B79A8FC00667242 /* CatPhotoAlbumController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FF71B79A8FC00667242 /* CatPhotoAlbumController.m */; };
+		D0BE70091B79A8FC00667242 /* CatPhotoAlbumTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FF91B79A8FC00667242 /* CatPhotoAlbumTableViewCell.m */; };
+		D0BE700A1B79A8FC00667242 /* CatPhotoPickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FFB1B79A8FC00667242 /* CatPhotoPickerCollectionViewCell.m */; };
+		D0BE700B1B79A8FC00667242 /* CatPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FFD1B79A8FC00667242 /* CatPhotoPickerController.m */; };
+		D0BE700C1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FFF1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.m */; };
+		D0BE700D1B79A8FC00667242 /* CatPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE70011B79A8FC00667242 /* CatPhotoPreviewController.m */; };
+		D0BE700E1B79A8FC00667242 /* Correct.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BE70021B79A8FC00667242 /* Correct.png */; };
+		D0BE700F1B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0BE70031B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0BE6FBB1B79A81200667242 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0BE6F991B79A81200667242 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0BE6FA01B79A81200667242;
+			remoteInfo = CatMediaPickerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D0BE6FA11B79A81200667242 /* CatMediaPickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatMediaPickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BE6FA51B79A81200667242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BE6FA61B79A81200667242 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0BE6FA81B79A81200667242 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D0BE6FA91B79A81200667242 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0BE6FAB1B79A81200667242 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D0BE6FAC1B79A81200667242 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D0BE6FAF1B79A81200667242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0BE6FB11B79A81200667242 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0BE6FBA1B79A81200667242 /* CatMediaPickerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatMediaPickerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0BE6FBF1B79A81200667242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0BE6FC01B79A81200667242 /* CatMediaPickerControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatMediaPickerControllerTests.m; sourceTree = "<group>"; };
+		D0BE6FF01B79A8FC00667242 /* CatMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatMedia.h; sourceTree = "<group>"; };
+		D0BE6FF11B79A8FC00667242 /* CatMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatMedia.m; sourceTree = "<group>"; };
+		D0BE6FF21B79A8FC00667242 /* CatMediaPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatMediaPickerController.h; sourceTree = "<group>"; };
+		D0BE6FF31B79A8FC00667242 /* CatMediaPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatMediaPickerController.m; sourceTree = "<group>"; };
+		D0BE6FF41B79A8FC00667242 /* CatMediaSelectType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatMediaSelectType.h; sourceTree = "<group>"; };
+		D0BE6FF51B79A8FC00667242 /* CatMediaType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatMediaType.h; sourceTree = "<group>"; };
+		D0BE6FF61B79A8FC00667242 /* CatPhotoAlbumController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPhotoAlbumController.h; sourceTree = "<group>"; };
+		D0BE6FF71B79A8FC00667242 /* CatPhotoAlbumController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPhotoAlbumController.m; sourceTree = "<group>"; };
+		D0BE6FF81B79A8FC00667242 /* CatPhotoAlbumTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPhotoAlbumTableViewCell.h; sourceTree = "<group>"; };
+		D0BE6FF91B79A8FC00667242 /* CatPhotoAlbumTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPhotoAlbumTableViewCell.m; sourceTree = "<group>"; };
+		D0BE6FFA1B79A8FC00667242 /* CatPhotoPickerCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPhotoPickerCollectionViewCell.h; sourceTree = "<group>"; };
+		D0BE6FFB1B79A8FC00667242 /* CatPhotoPickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPhotoPickerCollectionViewCell.m; sourceTree = "<group>"; };
+		D0BE6FFC1B79A8FC00667242 /* CatPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPhotoPickerController.h; sourceTree = "<group>"; };
+		D0BE6FFD1B79A8FC00667242 /* CatPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPhotoPickerController.m; sourceTree = "<group>"; };
+		D0BE6FFE1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPhotoPreviewCollectionViewCell.h; sourceTree = "<group>"; };
+		D0BE6FFF1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPhotoPreviewCollectionViewCell.m; sourceTree = "<group>"; };
+		D0BE70001B79A8FC00667242 /* CatPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPhotoPreviewController.h; sourceTree = "<group>"; };
+		D0BE70011B79A8FC00667242 /* CatPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPhotoPreviewController.m; sourceTree = "<group>"; };
+		D0BE70021B79A8FC00667242 /* Correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Correct.png; sourceTree = "<group>"; };
+		D0BE70041B79A8FC00667242 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CatMediaPickerControllerLocalizable.strings; sourceTree = "<group>"; };
+		D0BE70051B79A8FC00667242 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CatMediaPickerControllerLocalizable.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0BE6F9E1B79A81200667242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BE6FB71B79A81200667242 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0BE6F981B79A81200667242 = {
+			isa = PBXGroup;
+			children = (
+				D0BE6FA31B79A81200667242 /* CatMediaPickerController */,
+				D0BE6FBD1B79A81200667242 /* CatMediaPickerControllerTests */,
+				D0BE6FA21B79A81200667242 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0BE6FA21B79A81200667242 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE6FA11B79A81200667242 /* CatMediaPickerController.app */,
+				D0BE6FBA1B79A81200667242 /* CatMediaPickerControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0BE6FA31B79A81200667242 /* CatMediaPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE6FEF1B79A8FC00667242 /* CatMediaPickerController */,
+				D0BE6FA81B79A81200667242 /* AppDelegate.h */,
+				D0BE6FA91B79A81200667242 /* AppDelegate.m */,
+				D0BE6FAB1B79A81200667242 /* ViewController.h */,
+				D0BE6FAC1B79A81200667242 /* ViewController.m */,
+				D0BE6FAE1B79A81200667242 /* Main.storyboard */,
+				D0BE6FB11B79A81200667242 /* Images.xcassets */,
+				D0BE6FA41B79A81200667242 /* Supporting Files */,
+			);
+			path = CatMediaPickerController;
+			sourceTree = "<group>";
+		};
+		D0BE6FA41B79A81200667242 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE6FA51B79A81200667242 /* Info.plist */,
+				D0BE6FA61B79A81200667242 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0BE6FBD1B79A81200667242 /* CatMediaPickerControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE6FC01B79A81200667242 /* CatMediaPickerControllerTests.m */,
+				D0BE6FBE1B79A81200667242 /* Supporting Files */,
+			);
+			path = CatMediaPickerControllerTests;
+			sourceTree = "<group>";
+		};
+		D0BE6FBE1B79A81200667242 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE6FBF1B79A81200667242 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0BE6FEF1B79A8FC00667242 /* CatMediaPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				D0BE6FF01B79A8FC00667242 /* CatMedia.h */,
+				D0BE6FF11B79A8FC00667242 /* CatMedia.m */,
+				D0BE6FF21B79A8FC00667242 /* CatMediaPickerController.h */,
+				D0BE6FF31B79A8FC00667242 /* CatMediaPickerController.m */,
+				D0BE6FF41B79A8FC00667242 /* CatMediaSelectType.h */,
+				D0BE6FF51B79A8FC00667242 /* CatMediaType.h */,
+				D0BE6FF61B79A8FC00667242 /* CatPhotoAlbumController.h */,
+				D0BE6FF71B79A8FC00667242 /* CatPhotoAlbumController.m */,
+				D0BE6FF81B79A8FC00667242 /* CatPhotoAlbumTableViewCell.h */,
+				D0BE6FF91B79A8FC00667242 /* CatPhotoAlbumTableViewCell.m */,
+				D0BE6FFA1B79A8FC00667242 /* CatPhotoPickerCollectionViewCell.h */,
+				D0BE6FFB1B79A8FC00667242 /* CatPhotoPickerCollectionViewCell.m */,
+				D0BE6FFC1B79A8FC00667242 /* CatPhotoPickerController.h */,
+				D0BE6FFD1B79A8FC00667242 /* CatPhotoPickerController.m */,
+				D0BE6FFE1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.h */,
+				D0BE6FFF1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.m */,
+				D0BE70001B79A8FC00667242 /* CatPhotoPreviewController.h */,
+				D0BE70011B79A8FC00667242 /* CatPhotoPreviewController.m */,
+				D0BE70021B79A8FC00667242 /* Correct.png */,
+				D0BE70031B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings */,
+			);
+			path = CatMediaPickerController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0BE6FA01B79A81200667242 /* CatMediaPickerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BE6FC41B79A81200667242 /* Build configuration list for PBXNativeTarget "CatMediaPickerController" */;
+			buildPhases = (
+				D0BE6F9D1B79A81200667242 /* Sources */,
+				D0BE6F9E1B79A81200667242 /* Frameworks */,
+				D0BE6F9F1B79A81200667242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatMediaPickerController;
+			productName = CatMediaPickerController;
+			productReference = D0BE6FA11B79A81200667242 /* CatMediaPickerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0BE6FB91B79A81200667242 /* CatMediaPickerControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0BE6FC71B79A81200667242 /* Build configuration list for PBXNativeTarget "CatMediaPickerControllerTests" */;
+			buildPhases = (
+				D0BE6FB61B79A81200667242 /* Sources */,
+				D0BE6FB71B79A81200667242 /* Frameworks */,
+				D0BE6FB81B79A81200667242 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0BE6FBC1B79A81200667242 /* PBXTargetDependency */,
+			);
+			name = CatMediaPickerControllerTests;
+			productName = CatMediaPickerControllerTests;
+			productReference = D0BE6FBA1B79A81200667242 /* CatMediaPickerControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0BE6F991B79A81200667242 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "K-cat";
+				TargetAttributes = {
+					D0BE6FA01B79A81200667242 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D0BE6FB91B79A81200667242 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D0BE6FA01B79A81200667242;
+					};
+				};
+			};
+			buildConfigurationList = D0BE6F9C1B79A81200667242 /* Build configuration list for PBXProject "CatMediaPickerController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = D0BE6F981B79A81200667242;
+			productRefGroup = D0BE6FA21B79A81200667242 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0BE6FA01B79A81200667242 /* CatMediaPickerController */,
+				D0BE6FB91B79A81200667242 /* CatMediaPickerControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0BE6F9F1B79A81200667242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BE700E1B79A8FC00667242 /* Correct.png in Resources */,
+				D0BE6FB01B79A81200667242 /* Main.storyboard in Resources */,
+				D0BE6FB21B79A81200667242 /* Images.xcassets in Resources */,
+				D0BE700F1B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BE6FB81B79A81200667242 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0BE6F9D1B79A81200667242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BE700D1B79A8FC00667242 /* CatPhotoPreviewController.m in Sources */,
+				D0BE6FAD1B79A81200667242 /* ViewController.m in Sources */,
+				D0BE70081B79A8FC00667242 /* CatPhotoAlbumController.m in Sources */,
+				D0BE700B1B79A8FC00667242 /* CatPhotoPickerController.m in Sources */,
+				D0BE70061B79A8FC00667242 /* CatMedia.m in Sources */,
+				D0BE70071B79A8FC00667242 /* CatMediaPickerController.m in Sources */,
+				D0BE700C1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.m in Sources */,
+				D0BE700A1B79A8FC00667242 /* CatPhotoPickerCollectionViewCell.m in Sources */,
+				D0BE70091B79A8FC00667242 /* CatPhotoAlbumTableViewCell.m in Sources */,
+				D0BE6FAA1B79A81200667242 /* AppDelegate.m in Sources */,
+				D0BE6FA71B79A81200667242 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0BE6FB61B79A81200667242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0BE6FC11B79A81200667242 /* CatMediaPickerControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0BE6FBC1B79A81200667242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0BE6FA01B79A81200667242 /* CatMediaPickerController */;
+			targetProxy = D0BE6FBB1B79A81200667242 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0BE6FAE1B79A81200667242 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0BE6FAF1B79A81200667242 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0BE70031B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0BE70041B79A8FC00667242 /* en */,
+				D0BE70051B79A8FC00667242 /* zh-Hans */,
+			);
+			name = CatMediaPickerControllerLocalizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0BE6FC21B79A81200667242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0BE6FC31B79A81200667242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0BE6FC51B79A81200667242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CatMediaPickerController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D0BE6FC61B79A81200667242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = CatMediaPickerController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D0BE6FC81B79A81200667242 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CatMediaPickerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatMediaPickerController.app/CatMediaPickerController";
+			};
+			name = Debug;
+		};
+		D0BE6FC91B79A81200667242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CatMediaPickerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatMediaPickerController.app/CatMediaPickerController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0BE6F9C1B79A81200667242 /* Build configuration list for PBXProject "CatMediaPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BE6FC21B79A81200667242 /* Debug */,
+				D0BE6FC31B79A81200667242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0BE6FC41B79A81200667242 /* Build configuration list for PBXNativeTarget "CatMediaPickerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BE6FC51B79A81200667242 /* Debug */,
+				D0BE6FC61B79A81200667242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0BE6FC71B79A81200667242 /* Build configuration list for PBXNativeTarget "CatMediaPickerControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0BE6FC81B79A81200667242 /* Debug */,
+				D0BE6FC91B79A81200667242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0BE6F991B79A81200667242 /* Project object */;
+}
