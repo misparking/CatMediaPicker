@@ -10,6 +10,7 @@
 #import "CatMedia.h"
 #import "CatMediaType.h"
 #import "CatMediaSelectType.h"
+#import "CatMediaPickerControllerAppearance.h"
 
 @interface CatMediaPickerController : UINavigationController
 
@@ -27,14 +28,17 @@
 
 #pragma mark - Instance Methods
 /**
-*  Instance a new CatMediaPickerController with appoint type
-*
-*  @param mediaType       Media type
-*  @param mediaSelectType Media select type
-*
-*  @return New instance
-*/
+ *  Instance a new CatMediaPickerController with appoint type
+ *
+ *  @param mediaType       Media type
+ *  @param mediaSelectType Media select type
+ *  @param appearance      Appearance for current CatMediaPickerController
+ *
+ *  @return New instance
+ */
 - (instancetype)initWithMediaType:(CatMediaType)mediaType
-                  mediaSelectType:(CatMediaSelectType)mediaSelectType;
+                  mediaSelectType:(CatMediaSelectType)mediaSelectType
+                       appearance:
+                           (CatMediaPickerControllerAppearance *)appearance;
 
 @end

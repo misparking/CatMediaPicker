@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D02AB31A1B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AB3191B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.m */; };
 		D0BE6FA71B79A81200667242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FA61B79A81200667242 /* main.m */; };
 		D0BE6FAA1B79A81200667242 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FA91B79A81200667242 /* AppDelegate.m */; };
 		D0BE6FAD1B79A81200667242 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FAC1B79A81200667242 /* ViewController.m */; };
@@ -22,7 +23,6 @@
 		D0BE700C1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FFF1B79A8FC00667242 /* CatPhotoPreviewCollectionViewCell.m */; };
 		D0BE700D1B79A8FC00667242 /* CatPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE70011B79A8FC00667242 /* CatPhotoPreviewController.m */; };
 		D0BE700E1B79A8FC00667242 /* Correct.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BE70021B79A8FC00667242 /* Correct.png */; };
-		D0BE700F1B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0BE70031B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings */; };
 		D0BE70151B79DC3200667242 /* ResultPhotosCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE70141B79DC3200667242 /* ResultPhotosCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D02AB3181B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatMediaPickerControllerAppearance.h; sourceTree = "<group>"; };
+		D02AB3191B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatMediaPickerControllerAppearance.m; sourceTree = "<group>"; };
 		D0BE6FA11B79A81200667242 /* CatMediaPickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatMediaPickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BE6FA51B79A81200667242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BE6FA61B79A81200667242 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,8 +70,6 @@
 		D0BE70001B79A8FC00667242 /* CatPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatPhotoPreviewController.h; sourceTree = "<group>"; };
 		D0BE70011B79A8FC00667242 /* CatPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatPhotoPreviewController.m; sourceTree = "<group>"; };
 		D0BE70021B79A8FC00667242 /* Correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Correct.png; sourceTree = "<group>"; };
-		D0BE70041B79A8FC00667242 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/CatMediaPickerControllerLocalizable.strings; sourceTree = "<group>"; };
-		D0BE70051B79A8FC00667242 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/CatMediaPickerControllerLocalizable.strings"; sourceTree = "<group>"; };
 		D0BE70131B79DC3200667242 /* ResultPhotosCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultPhotosCollectionViewCell.h; sourceTree = "<group>"; };
 		D0BE70141B79DC3200667242 /* ResultPhotosCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultPhotosCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,12 +156,14 @@
 		D0BE6FEF1B79A8FC00667242 /* CatMediaPickerController */ = {
 			isa = PBXGroup;
 			children = (
+				D0BE6FF41B79A8FC00667242 /* CatMediaSelectType.h */,
+				D0BE6FF51B79A8FC00667242 /* CatMediaType.h */,
 				D0BE6FF01B79A8FC00667242 /* CatMedia.h */,
 				D0BE6FF11B79A8FC00667242 /* CatMedia.m */,
 				D0BE6FF21B79A8FC00667242 /* CatMediaPickerController.h */,
 				D0BE6FF31B79A8FC00667242 /* CatMediaPickerController.m */,
-				D0BE6FF41B79A8FC00667242 /* CatMediaSelectType.h */,
-				D0BE6FF51B79A8FC00667242 /* CatMediaType.h */,
+				D02AB3181B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.h */,
+				D02AB3191B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.m */,
 				D0BE6FF61B79A8FC00667242 /* CatPhotoAlbumController.h */,
 				D0BE6FF71B79A8FC00667242 /* CatPhotoAlbumController.m */,
 				D0BE6FF81B79A8FC00667242 /* CatPhotoAlbumTableViewCell.h */,
@@ -175,7 +177,6 @@
 				D0BE70001B79A8FC00667242 /* CatPhotoPreviewController.h */,
 				D0BE70011B79A8FC00667242 /* CatPhotoPreviewController.m */,
 				D0BE70021B79A8FC00667242 /* Correct.png */,
-				D0BE70031B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings */,
 			);
 			path = CatMediaPickerController;
 			sourceTree = "<group>";
@@ -264,7 +265,6 @@
 				D0BE700E1B79A8FC00667242 /* Correct.png in Resources */,
 				D0BE6FB01B79A81200667242 /* Main.storyboard in Resources */,
 				D0BE6FB21B79A81200667242 /* Images.xcassets in Resources */,
-				D0BE700F1B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +294,7 @@
 				D0BE70091B79A8FC00667242 /* CatPhotoAlbumTableViewCell.m in Sources */,
 				D0BE6FAA1B79A81200667242 /* AppDelegate.m in Sources */,
 				D0BE6FA71B79A81200667242 /* main.m in Sources */,
+				D02AB31A1B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,15 +323,6 @@
 				D0BE6FAF1B79A81200667242 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D0BE70031B79A8FC00667242 /* CatMediaPickerControllerLocalizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0BE70041B79A8FC00667242 /* en */,
-				D0BE70051B79A8FC00667242 /* zh-Hans */,
-			);
-			name = CatMediaPickerControllerLocalizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

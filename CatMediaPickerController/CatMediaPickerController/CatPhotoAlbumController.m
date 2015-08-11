@@ -18,6 +18,7 @@ static NSString *const PhotoAlbumCellIdentifier = @"PhotoAlbumCellIdentifier";
   UITableView *_photoAlbumTable;
   NSMutableArray *_photoAlbumArray;
   ALAssetsLibrary *_alassetsLibrary;
+  CatMediaPickerControllerAppearance *_appearance;
 }
 
 @end
@@ -34,10 +35,13 @@ static NSString *const PhotoAlbumCellIdentifier = @"PhotoAlbumCellIdentifier";
   // Dispose of any resources that can be recreated.
 }
 
-- (instancetype)initWithMediaSelectType:(CatMediaSelectType)mediaSelectType {
+- (instancetype)initWithMediaSelectType:(CatMediaSelectType)mediaSelectType
+                             appearance:(CatMediaPickerControllerAppearance *)
+                                            appearance {
   self = [super init];
   if (self) {
     _mediaSelectType = mediaSelectType;
+    _appearance = appearance;
     [self initBaseLayout];
     [self initBaseData];
   }
@@ -49,13 +53,12 @@ static NSString *const PhotoAlbumCellIdentifier = @"PhotoAlbumCellIdentifier";
  *  Init base layout
  */
 - (void)initBaseLayout {
-  [self setTitle:NSLocalizedStringFromTable(
-                     @"ControllerTitle_PhotoPickerAlbum",
-                     @"CatMediaPickerControllerLocalizable", nil)];
+  [self setTitle:_appearance.controllerTitlePhotoAlbum];
   UIBarButtonItem *cancelBarButtonItem = [[UIBarButtonItem alloc]
-      initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
-                           target:self
-                           action:@selector(cancelBarButtonItemAction)];
+      initWithTitle:_appearance.buttonTitleCancel
+              style:UIBarButtonItemStyleDone
+             target:self
+             action:@selector(cancelBarButtonItemAction)];
   [self.navigationItem setLeftBarButtonItem:cancelBarButtonItem animated:YES];
 
   _photoAlbumTable =
@@ -114,7 +117,9 @@ static NSString *const PhotoAlbumCellIdentifier = @"PhotoAlbumCellIdentifier";
   ALAssetsGroup *tempGroup = [_photoAlbumArray objectAtIndex:indexPath.row];
   CatPhotoPickerController *photoPickerController =
       [[CatPhotoPickerController alloc] initWithAssetsGroup:tempGroup
-                                            mediaSelectType:_mediaSelectType];
+                                            mediaSelectType:_mediaSelectType
+                                                 appearance:_appearance];
+
   [photoPickerController
       setTitle:[tempGroup valueForProperty:ALAssetsGroupPropertyName]];
   [self.navigationController pushViewController:photoPickerController

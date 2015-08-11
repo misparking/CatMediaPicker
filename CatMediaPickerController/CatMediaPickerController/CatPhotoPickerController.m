@@ -19,6 +19,7 @@ static NSString *const PhotoPickerCellIdentifier = @"PhotoPickerCellIdentifier";
                                         UICollectionViewDataSource> {
   ALAssetsGroup *_photosSourceGroup;
   CatMediaSelectType _photosSelectType;
+  CatMediaPickerControllerAppearance *_appearance;
   UICollectionView *_photosCollectionView;
   NSMutableArray *_photosAssetsArray;
   UIBarButtonItem *_photosPreviewBarButton;
@@ -43,9 +44,12 @@ static NSString *const PhotoPickerCellIdentifier = @"PhotoPickerCellIdentifier";
 }
 
 - (instancetype)initWithAssetsGroup:(ALAssetsGroup *)assetsGroup
-                    mediaSelectType:(CatMediaSelectType)mediaSelectType {
+                    mediaSelectType:(CatMediaSelectType)mediaSelectType
+                         appearance:
+                             (CatMediaPickerControllerAppearance *)appearance {
   self = [super init];
   if (self) {
+    _appearance = appearance;
     _photosSourceGroup = assetsGroup;
     _photosSelectType = mediaSelectType;
   }
@@ -56,10 +60,11 @@ static NSString *const PhotoPickerCellIdentifier = @"PhotoPickerCellIdentifier";
  *  Init base layout
  */
 - (void)initBaseLayout {
-  _photosSaveBarButton = [[UIBarButtonItem alloc]
-      initWithBarButtonSystemItem:UIBarButtonSystemItemSave
-                           target:self
-                           action:@selector(saveBarButtonAction)];
+  _photosSaveBarButton =
+      [[UIBarButtonItem alloc] initWithTitle:_appearance.buttonTitleSend
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(saveBarButtonAction)];
   [self.navigationItem setRightBarButtonItem:_photosSaveBarButton animated:YES];
 
   _photosCollectionView = [[UICollectionView alloc]
@@ -84,9 +89,7 @@ static NSString *const PhotoPickerCellIdentifier = @"PhotoPickerCellIdentifier";
   [self.view addSubview:functionToolbar];
 
   _photosPreviewBarButton = [[UIBarButtonItem alloc]
-      initWithTitle:NSLocalizedStringFromTable(
-                        @"PhotosPreviewButton",
-                        @"CatMediaPickerControllerLocalizable", nil)
+      initWithTitle:_appearance.buttonTitlePreview
               style:UIBarButtonItemStylePlain
              target:self
              action:@selector(photosPreviewBarButtonAction)];
@@ -121,8 +124,8 @@ static NSString *const PhotoPickerCellIdentifier = @"PhotoPickerCellIdentifier";
 - (void)photosPreviewBarButtonAction {
   CatPhotoPreviewController *photoPreviewController =
       [[CatPhotoPreviewController alloc] initWithAssetsArray:_photosPickedArray
-                                             mediaSelectType:_photosSelectType
-                                          defaultSelectIndex:0];
+                                          defaultSelectIndex:0
+                                                  appearance:_appearance];
   [self.navigationController pushViewController:photoPreviewController
                                        animated:YES];
 }

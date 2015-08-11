@@ -18,7 +18,7 @@ static NSString *const PhotosPreviewCollectionViewCellIdentifier =
 @interface CatPhotoPreviewController () <UICollectionViewDelegate,
                                          UICollectionViewDelegateFlowLayout,
                                          UICollectionViewDataSource> {
-  CatMediaSelectType _photosSelectType;
+  CatMediaPickerControllerAppearance *_appearance;
   NSMutableArray *_photosAssetsArray;
   NSInteger _photosDefaultSelectIndex;
   UICollectionView *_photosPreviewCollectionView;
@@ -40,11 +40,12 @@ static NSString *const PhotosPreviewCollectionViewCellIdentifier =
 
 #pragma mark - Instance Methods
 - (instancetype)initWithAssetsArray:(NSArray *)assetsArray
-                    mediaSelectType:(CatMediaSelectType)mediaSelectType
-                 defaultSelectIndex:(NSInteger)defaultSelectIndex {
+                 defaultSelectIndex:(NSInteger)defaultSelectIndex
+                         appearance:
+                             (CatMediaPickerControllerAppearance *)appearance {
   self = [super init];
   if (self) {
-    _photosSelectType = mediaSelectType;
+    _appearance = appearance;
     _photosAssetsArray = [[NSMutableArray alloc] initWithArray:assetsArray];
     _photosDefaultSelectIndex = defaultSelectIndex;
 
@@ -69,10 +70,11 @@ static NSString *const PhotosPreviewCollectionViewCellIdentifier =
       forCellWithReuseIdentifier:PhotosPreviewCollectionViewCellIdentifier];
   [self.view addSubview:_photosPreviewCollectionView];
 
-  UIBarButtonItem *saveBarButtonItem = [[UIBarButtonItem alloc]
-      initWithBarButtonSystemItem:UIBarButtonSystemItemSave
-                           target:self
-                           action:@selector(saveBarButtonAction)];
+  UIBarButtonItem *saveBarButtonItem =
+      [[UIBarButtonItem alloc] initWithTitle:_appearance.buttonTitleSend
+                                       style:UIBarButtonItemStyleDone
+                                      target:self
+                                      action:@selector(saveBarButtonAction)];
   [self.navigationItem setRightBarButtonItem:saveBarButtonItem animated:YES];
 
   [_photosPreviewCollectionView setPagingEnabled:YES];

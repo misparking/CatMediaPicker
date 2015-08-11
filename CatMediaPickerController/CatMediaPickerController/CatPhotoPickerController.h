@@ -9,19 +9,23 @@
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "CatMediaSelectType.h"
+#import "CatMediaPickerControllerAppearance.h"
 
 @interface CatPhotoPickerController : UIViewController
 
 /**
- *  Instance a CatPhotoPickerController with appoint ALAssetsGroup and select
- *way
- *
- *  @param assetsGroup     Appoint ALAssetsGroup
- *  @param mediaSelectType Appoint select way
- *
- *  @return New instance
- */
+*  Instance a CatPhotoPickerController with appoint ALAssetsGroup and select
+*way
+*
+*  @param assetsGroup     Appoint ALAssetsGroup
+*  @param mediaSelectType Appoint select way
+*  @param appearance      Appearance for current CatPhotoPickerController
+*
+*  @return New instance
+*/
 - (instancetype)initWithAssetsGroup:(ALAssetsGroup *)assetsGroup
-                    mediaSelectType:(CatMediaSelectType)mediaSelectType;
+                    mediaSelectType:(CatMediaSelectType)mediaSelectType
+                         appearance:
+                             (CatMediaPickerControllerAppearance *)appearance;
 
 @end

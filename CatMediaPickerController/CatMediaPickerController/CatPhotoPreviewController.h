@@ -8,11 +8,22 @@
 
 #import <UIKit/UIKit.h>
 #import "CatMediaSelectType.h"
+#import "CatMediaPickerControllerAppearance.h"
 
 @interface CatPhotoPreviewController : UIViewController
 
+/**
+ *  Instance a new CatPhotoPreviewController with appoint arguments
+ *
+ *  @param assetsArray        Array contains ALAsset object
+ *  @param defaultSelectIndex Default photo at index for preview
+ *  @param appearance         Appearance for current CatPhotoPreviewController
+ *
+ *  @return New instance
+ */
 - (instancetype)initWithAssetsArray:(NSArray *)assetsArray
-                    mediaSelectType:(CatMediaSelectType)mediaSelectType
-                 defaultSelectIndex:(NSInteger)defaultSelectIndex;
+                 defaultSelectIndex:(NSInteger)defaultSelectIndex
+                         appearance:
+                             (CatMediaPickerControllerAppearance *)appearance;
 
 @end

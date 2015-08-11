@@ -9,9 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "CatMediaSelectType.h"
+#import "CatMediaPickerControllerAppearance.h"
 
 @interface CatPhotoAlbumController : UIViewController
 
-- (instancetype)initWithMediaSelectType:(CatMediaSelectType)mediaSelectType;
+- (instancetype)initWithMediaSelectType:(CatMediaSelectType)mediaSelectType
+                             appearance:(CatMediaPickerControllerAppearance *)
+                                            appearance;
 
 @end

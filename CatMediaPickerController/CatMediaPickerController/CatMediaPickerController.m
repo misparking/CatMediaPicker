@@ -9,7 +9,9 @@
 #import "CatMediaPickerController.h"
 #import "CatPhotoAlbumController.h"
 
-@interface CatMediaPickerController ()
+@interface CatMediaPickerController () {
+  CatMediaPickerControllerAppearance *_appearance;
+}
 
 @end
 
@@ -27,12 +29,19 @@
 
 #pragma mark - Instance Methods
 - (instancetype)initWithMediaType:(CatMediaType)mediaType
-                  mediaSelectType:(CatMediaSelectType)mediaSelectType {
+                  mediaSelectType:(CatMediaSelectType)mediaSelectType
+                       appearance:
+                           (CatMediaPickerControllerAppearance *)appearance {
+  if (appearance) {
+    _appearance = appearance;
+  } else {
+    _appearance = [CatMediaPickerControllerAppearance appearance];
+  }
   switch (mediaType) {
   case CatMediaTypePhoto: {
     CatPhotoAlbumController *imagePickerController =
-        [[CatPhotoAlbumController alloc]
-            initWithMediaSelectType:mediaSelectType];
+        [[CatPhotoAlbumController alloc] initWithMediaSelectType:mediaSelectType
+                                                      appearance:_appearance];
     self = [super initWithRootViewController:imagePickerController];
     if (self) {
     }

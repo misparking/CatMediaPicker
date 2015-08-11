@@ -84,7 +84,8 @@ static NSString *const ResultPhotosCollectionViewCellIdentifier =
 - (void)singleSelectAction {
   _mediaPickerController = [[CatMediaPickerController alloc]
       initWithMediaType:CatMediaTypePhoto
-        mediaSelectType:CatMediaSelectTypeSingle];
+        mediaSelectType:CatMediaSelectTypeSingle
+             appearance:[CatMediaPickerControllerAppearance appearance]];
   [self presentViewController:_mediaPickerController
                      animated:YES
                    completion:nil];
@@ -117,7 +118,8 @@ static NSString *const ResultPhotosCollectionViewCellIdentifier =
 - (void)mutipleSelectAction {
   _mediaPickerController = [[CatMediaPickerController alloc]
       initWithMediaType:CatMediaTypePhoto
-        mediaSelectType:CatMediaSelectTypeMultiple];
+        mediaSelectType:CatMediaSelectTypeMultiple
+             appearance:[CatMediaPickerControllerAppearance appearance]];
   [self presentViewController:_mediaPickerController
                      animated:YES
                    completion:nil];
