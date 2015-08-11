@@ -100,7 +100,7 @@ static NSString *const ResultPhotosCollectionViewCellIdentifier =
         [tempMediaPickerController dismissViewControllerAnimated:YES
                                                       completion:nil];
         [_resultPhotosArraySelf removeAllObjects];
-        [_resultPhotosArraySelf addObject:mediaArray];
+        [_resultPhotosArraySelf addObjectsFromArray:mediaArray];
         [_resultPhotosCollectionViewSelf reloadData];
       }];
 
