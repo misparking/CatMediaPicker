@@ -88,15 +88,19 @@ static NSString *const ResultPhotosCollectionViewCellIdentifier =
   [self presentViewController:_mediaPickerController
                      animated:YES
                    completion:nil];
+
+  __weak typeof(NSMutableArray *)_resultPhotosArraySelf = _resultPhotosArray;
+  __weak typeof(UICollectionView *)_resultPhotosCollectionViewSelf =
+      _resultPhotosCollectionView;
   [_mediaPickerController
       setCompleteSelectMediaHandler:^(CatMediaPickerController
                                           *tempMediaPickerController,
                                       NSArray *mediaArray) {
         [tempMediaPickerController dismissViewControllerAnimated:YES
                                                       completion:nil];
-        [_resultPhotosArray removeAllObjects];
-        [_resultPhotosArray addObject:mediaArray];
-        [_resultPhotosCollectionView reloadData];
+        [_resultPhotosArraySelf removeAllObjects];
+        [_resultPhotosArraySelf addObject:mediaArray];
+        [_resultPhotosCollectionViewSelf reloadData];
       }];
 
   [_mediaPickerController
@@ -117,15 +121,19 @@ static NSString *const ResultPhotosCollectionViewCellIdentifier =
   [self presentViewController:_mediaPickerController
                      animated:YES
                    completion:nil];
+
+  __weak typeof(NSMutableArray *)_resultPhotosArraySelf = _resultPhotosArray;
+  __weak typeof(UICollectionView *)_resultPhotosCollectionViewSelf =
+      _resultPhotosCollectionView;
   [_mediaPickerController
       setCompleteSelectMediaHandler:^(CatMediaPickerController
                                           *tempMediaPickerController,
                                       NSArray *mediaArray) {
         [tempMediaPickerController dismissViewControllerAnimated:YES
                                                       completion:nil];
-        [_resultPhotosArray removeAllObjects];
-        [_resultPhotosArray addObjectsFromArray:mediaArray];
-        [_resultPhotosCollectionView reloadData];
+        [_resultPhotosArraySelf removeAllObjects];
+        [_resultPhotosArraySelf addObjectsFromArray:mediaArray];
+        [_resultPhotosCollectionViewSelf reloadData];
       }];
 
   [_mediaPickerController
