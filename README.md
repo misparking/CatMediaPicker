@@ -1,5 +1,10 @@
 # CatMediaPickerController
 
+[![Build Status](https://api.travis-ci.org/K-cat/CatMediaPickerController.svg)](https://travis-ci.org/K-cat)
+[![Version](https://img.shields.io/cocoapods/v/CatMediaPickerController.svg)](https://cocoapods.org/pods/CatMediaPickerController)
+[![Platform](https://img.shields.io/cocoapods/p/CatMediaPickerController.svg)]()
+[![License](https://img.shields.io/cocoapods/l/CatMediaPickerController.svg)]()
+
 # Introduction
 
 A media picker controller for easy to use with my mind
@@ -26,7 +31,7 @@ CatMediaPickerController *mediaPickerController =
           initWithMediaType:CatMediaTypePhoto
             mediaSelectType:CatMediaSelectTypeSingle
                  appearance:[CatMediaPickerControllerAppearance appearance]];
-  [self presentViewController:_mediaPickerController
+  [self presentViewController:mediaPickerController
                      animated:YES
                    completion:nil];
 
@@ -41,7 +46,7 @@ CatMediaPickerController *mediaPickerController =
       }];
 
 //Media select cancel handler
-[_mediaPickerController
+[mediaPickerController
       setCancelSelectMediaHandler:^(CatMediaPickerController
                                         *tempMediaPickerController) {
         [tempMediaPickerController dismissViewControllerAnimated:YES
