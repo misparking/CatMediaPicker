@@ -15,3 +15,38 @@ CatMediaPickerController is available on [CocoaPods](http://cocoapods.org).Just 
 ```ruby
 pod 'CatMediaPickerController'
 ```
+
+# Usage
+
+```objective-c
+#import "CatMediaPickerController"
+
+CatMediaPickerController *mediaPickerController =
+      [[CatMediaPickerController alloc]
+          initWithMediaType:CatMediaTypePhoto
+            mediaSelectType:CatMediaSelectTypeSingle
+                 appearance:[CatMediaPickerControllerAppearance appearance]];
+  [self presentViewController:_mediaPickerController
+                     animated:YES
+                   completion:nil];
+
+//Media select complete handler
+[mediaPickerController
+      setCompleteSelectMediaHandler:^(CatMediaPickerController
+                                          *tempMediaPickerController,
+                                      NSArray *mediaArray) {
+        [tempMediaPickerController dismissViewControllerAnimated:YES
+                                                      completion:nil];
+        //Do something...
+      }];
+
+//Media select cancel handler
+[_mediaPickerController
+      setCancelSelectMediaHandler:^(CatMediaPickerController
+                                        *tempMediaPickerController) {
+        [tempMediaPickerController dismissViewControllerAnimated:YES
+                                                      completion:nil];
+        //Do something
+      }];
+
+```
