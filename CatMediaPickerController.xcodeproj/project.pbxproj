@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D02AB31A1B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D02AB3191B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.m */; };
+		D0A907D91CACFF8D00ECBB88 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A907D81CACFF8D00ECBB88 /* Default-568h@2x.png */; };
 		D0BE6FA71B79A81200667242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FA61B79A81200667242 /* main.m */; };
 		D0BE6FAA1B79A81200667242 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FA91B79A81200667242 /* AppDelegate.m */; };
 		D0BE6FAD1B79A81200667242 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BE6FAC1B79A81200667242 /* ViewController.m */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		D02AB3181B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatMediaPickerControllerAppearance.h; sourceTree = "<group>"; };
 		D02AB3191B79FC2100ECA6DB /* CatMediaPickerControllerAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatMediaPickerControllerAppearance.m; sourceTree = "<group>"; };
+		D0A907D81CACFF8D00ECBB88 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D0BE6FA11B79A81200667242 /* CatMediaPickerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatMediaPickerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BE6FA51B79A81200667242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0BE6FA61B79A81200667242 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		D0BE6F981B79A81200667242 = {
 			isa = PBXGroup;
 			children = (
+				D0A907D81CACFF8D00ECBB88 /* Default-568h@2x.png */,
 				D0BE6FA31B79A81200667242 /* CatMediaPickerController */,
 				D0BE6FBD1B79A81200667242 /* CatMediaPickerControllerTests */,
 				D0BE6FA21B79A81200667242 /* Products */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BE700E1B79A8FC00667242 /* Correct.png in Resources */,
+				D0A907D91CACFF8D00ECBB88 /* Default-568h@2x.png in Resources */,
 				D0BE6FB01B79A81200667242 /* Main.storyboard in Resources */,
 				D0BE6FB21B79A81200667242 /* Images.xcassets in Resources */,
 			);
@@ -364,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,7 +418,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CatMediaPickerController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,7 +429,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CatMediaPickerController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

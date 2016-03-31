@@ -115,6 +115,10 @@ static NSString *const PhotosPreviewCollectionViewCellIdentifier =
   return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    [[(CatPhotoPreviewCollectionViewCell *)cell previewScrollView] setZoomScale:1];
+}
+
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout *)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {

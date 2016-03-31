@@ -12,5 +12,5 @@
     : UICollectionViewCell <UIScrollViewDelegate>
 
 @property(nonatomic, retain) UIImageView *previewImageView;
-
+@property(nonatomic, retain) UIScrollView *previewScrollView;
 @end

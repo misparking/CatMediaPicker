@@ -8,9 +8,7 @@
 
 #import "CatPhotoPreviewCollectionViewCell.h"
 
-@implementation CatPhotoPreviewCollectionViewCell {
-  UIScrollView *_previewScrollView;
-}
+@implementation CatPhotoPreviewCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
   self = [super initWithFrame:frame];
