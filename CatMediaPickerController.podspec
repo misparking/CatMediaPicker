@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CatMediaPickerController"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "The media picker controller that easy to use with my mind."
   s.homepage     = "https://github.com/K-cat/CatMediaPickerController"
   s.license      = "MIT"
