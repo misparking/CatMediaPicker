@@ -11,8 +11,7 @@
 
 <p align="center">
 	<a href="https://travis-ci.org/ImKcat/CatMediaPicker"><img src="http://img.shields.io/travis/ImKcat/CatMediaPicker.svg?style=flat" alt="Travis CI Status"></a>
-	<a href="https://codebeat.co/projects/github-com-imkcat-catcrypto-master"><img src="https://codebeat.co/badges/003d39ba-cbd6-4166-ab28-57630fc60f9f" alt="Codebeat"></a>
-  <a href="https://codecov.io/gh/ImKcat/CatCrypto"><img src="https://codecov.io/gh/ImKcat/CatCrypto/branch/master/graph/badge.svg" /></a>
+	<a href="https://codebeat.co/projects/github-com-imkcat-catmediapicker-master"><img src="https://codebeat.co/badges/b96c64f1-1f42-4ed6-bc75-99f4682fe28a" alt="Codebeat"></a>
 </p>
 
 CatMediaPicker is a media picker for easy to use.
