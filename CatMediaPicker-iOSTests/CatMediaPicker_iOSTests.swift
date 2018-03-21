@@ -1,15 +1,15 @@
 //
-//  CatMediaPickerControllerTests.swift
-//  CatMediaPickerControllerTests
+//  CatMediaPicker_iOSTests.swift
+//  CatMediaPicker-iOSTests
 //
-//  Created by Kcat on 2018/3/10.
+//  Created by Kcat on 2018/3/21.
 //  Copyright © 2018年 ImKcat. All rights reserved.
 //
 
 import XCTest
-@testable import CatMediaPickerController
+@testable import CatMediaPicker_iOS
 
-class CatMediaPickerControllerTests: XCTestCase {
+class CatMediaPicker_iOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
