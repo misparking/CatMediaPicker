@@ -10,9 +10,9 @@ import UIKit
 import Photos
 
 // MARK: - CatPhotosPickerController Requirements
-class CatPhotosPickerControllerConfigure {
+public class CatPhotosPickerControllerConfigure {
 
-    var mediaType: PHAssetMediaType = .image {
+    public var mediaType: PHAssetMediaType = .image {
         didSet {
             switch mediaType {
             case .unknown:
@@ -21,17 +21,18 @@ class CatPhotosPickerControllerConfigure {
             }
         }
     }
-    var maximumSelectCount: Int = 1 {
+    public var maximumSelectCount: Int = 1 {
         didSet {
             if maximumSelectCount < 1 {
                 maximumSelectCount = 1
             }
         }
     }
+    public init() {}
     
 }
 
-protocol CatPhotosPickerControllerDelegate: NSObjectProtocol {
+public protocol CatPhotosPickerControllerDelegate: NSObjectProtocol {
     
     func didFinishPicking(pickerController: CatPhotosPickerController, media: [CatMedia])
     func didCancelPicking(pickerController: CatPhotosPickerController)
@@ -39,12 +40,12 @@ protocol CatPhotosPickerControllerDelegate: NSObjectProtocol {
 }
 
 // MARK: - CatPhotosPickerController
-class CatPhotosPickerController: UINavigationController, UINavigationControllerDelegate, CatPhotosListControllerDelegate {
+public class CatPhotosPickerController: UINavigationController, UINavigationControllerDelegate, CatPhotosListControllerDelegate {
     
-    weak var pickerControllerDelegate: CatPhotosPickerControllerDelegate?
+    public weak var pickerControllerDelegate: CatPhotosPickerControllerDelegate?
     
     // MARK: - Initialize
-    init(configure: CatPhotosPickerControllerConfigure? = CatPhotosPickerControllerConfigure()) {
+    public init(configure: CatPhotosPickerControllerConfigure? = CatPhotosPickerControllerConfigure()) {
         let listController = CatPhotosListController()
         listController.pickerControllerConfigure = configure!
         super.init(rootViewController: listController)
@@ -56,7 +57,7 @@ class CatPhotosPickerController: UINavigationController, UINavigationControllerD
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -130,7 +131,7 @@ class CatPhotosListController: UICollectionViewController, UICollectionViewDeleg
         self.collectionView?.allowsMultipleSelection = true
         self.collectionView?.backgroundColor = UIColor.clear
         self.collectionView?.alwaysBounceVertical = true
-        self.cancelBarButtonItem = UIBarButtonItem(title: String.localizedString(defaultString: "Cancel", key: "CatMediaPicker.Done", comment: ""),
+        self.cancelBarButtonItem = UIBarButtonItem(title: String.localizedString(defaultString: "Cancel", key: "CatMediaPicker.Cancel", comment: ""),
                                                    style: .plain,
                                                    target: self,
                                                    action: #selector(cancelAction))

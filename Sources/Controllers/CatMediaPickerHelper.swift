@@ -9,9 +9,9 @@
 import UIKit
 import Photos
 
-struct CatMedia {
+public struct CatMedia {
     
-    var type: PHAssetMediaType?
-    var source: PHAsset?
+    public var type: PHAssetMediaType?
+    public var source: PHAsset?
     
 }
