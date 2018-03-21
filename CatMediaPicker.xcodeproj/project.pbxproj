@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3365A902053E5AF00A95C44 /* CatMediaPickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3365A8F2053E5AF00A95C44 /* CatMediaPickerHelper.swift */; };
+		C37AD7C5205BC80A00423FA7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C37AD7C4205BC80A00423FA7 /* StringExtension.swift */; };
+		C3981E532056BF8200CE0AED /* CatPhotosPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3981E522056BF8200CE0AED /* CatPhotosPickerController.swift */; };
+		C3EE2C962053A3AB00105435 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EE2C952053A3AB00105435 /* AppDelegate.swift */; };
+		C3EE2C982053A3AB00105435 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EE2C972053A3AB00105435 /* ViewController.swift */; };
+		C3EE2C9B2053A3AB00105435 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EE2C992053A3AB00105435 /* Main.storyboard */; };
+		C3EE2C9D2053A3AB00105435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3EE2C9C2053A3AB00105435 /* Assets.xcassets */; };
+		C3EE2CA02053A3AB00105435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EE2C9E2053A3AB00105435 /* LaunchScreen.storyboard */; };
+		C3EE2CAB2053A3AB00105435 /* CatMediaPickerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EE2CAA2053A3AB00105435 /* CatMediaPickerControllerTests.swift */; };
+		C3EE2CB62053A3AB00105435 /* CatMediaPickerControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EE2CB52053A3AB00105435 /* CatMediaPickerControllerUITests.swift */; };
+		C3F259CA205C1156007CF526 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F259C9205C1156007CF526 /* UIViewExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3EE2CA72053A3AB00105435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3EE2C8A2053A3AB00105435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3EE2C912053A3AB00105435;
+			remoteInfo = CatMediaPickerController;
+		};
+		C3EE2CB22053A3AB00105435 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3EE2C8A2053A3AB00105435 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3EE2C912053A3AB00105435;
+			remoteInfo = CatMediaPickerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3365A8F2053E5AF00A95C44 /* CatMediaPickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMediaPickerHelper.swift; sourceTree = "<group>"; };
+		C37AD7C4205BC80A00423FA7 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C3981E522056BF8200CE0AED /* CatPhotosPickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatPhotosPickerController.swift; sourceTree = "<group>"; };
+		C3EE2C922053A3AB00105435 /* CatMediaPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatMediaPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EE2C952053A3AB00105435 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3EE2C972053A3AB00105435 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3EE2C9A2053A3AB00105435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3EE2C9C2053A3AB00105435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3EE2C9F2053A3AB00105435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3EE2CA12053A3AB00105435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EE2CA62053A3AB00105435 /* CatMediaPickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatMediaPickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EE2CAA2053A3AB00105435 /* CatMediaPickerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMediaPickerControllerTests.swift; sourceTree = "<group>"; };
+		C3EE2CAC2053A3AB00105435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EE2CB12053A3AB00105435 /* CatMediaPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatMediaPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EE2CB52053A3AB00105435 /* CatMediaPickerControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatMediaPickerControllerUITests.swift; sourceTree = "<group>"; };
+		C3EE2CB72053A3AC00105435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3F259C9205C1156007CF526 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3EE2C8F2053A3AB00105435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EE2CA32053A3AB00105435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EE2CAE2053A3AB00105435 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3365A932054060B00A95C44 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3365A8F2053E5AF00A95C44 /* CatMediaPickerHelper.swift */,
+				C3981E522056BF8200CE0AED /* CatPhotosPickerController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C37AD7C3205BC7EB00423FA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C37AD7C4205BC80A00423FA7 /* StringExtension.swift */,
+				C3F259C9205C1156007CF526 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3EE2C892053A3AB00105435 = {
+			isa = PBXGroup;
+			children = (
+				C3EE2CC32053A3B000105435 /* Sources */,
+				C3EE2C942053A3AB00105435 /* CatMediaPickerController */,
+				C3EE2CA92053A3AB00105435 /* CatMediaPickerControllerTests */,
+				C3EE2CB42053A3AB00105435 /* CatMediaPickerControllerUITests */,
+				C3EE2C932053A3AB00105435 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3EE2C932053A3AB00105435 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3EE2C922053A3AB00105435 /* CatMediaPicker.app */,
+				C3EE2CA62053A3AB00105435 /* CatMediaPickerTests.xctest */,
+				C3EE2CB12053A3AB00105435 /* CatMediaPickerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3EE2C942053A3AB00105435 /* CatMediaPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				C3EE2C952053A3AB00105435 /* AppDelegate.swift */,
+				C3EE2C972053A3AB00105435 /* ViewController.swift */,
+				C3EE2C992053A3AB00105435 /* Main.storyboard */,
+				C3EE2C9C2053A3AB00105435 /* Assets.xcassets */,
+				C3EE2C9E2053A3AB00105435 /* LaunchScreen.storyboard */,
+				C3EE2CA12053A3AB00105435 /* Info.plist */,
+			);
+			path = CatMediaPickerController;
+			sourceTree = "<group>";
+		};
+		C3EE2CA92053A3AB00105435 /* CatMediaPickerControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3EE2CAA2053A3AB00105435 /* CatMediaPickerControllerTests.swift */,
+				C3EE2CAC2053A3AB00105435 /* Info.plist */,
+			);
+			path = CatMediaPickerControllerTests;
+			sourceTree = "<group>";
+		};
+		C3EE2CB42053A3AB00105435 /* CatMediaPickerControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3EE2CB52053A3AB00105435 /* CatMediaPickerControllerUITests.swift */,
+				C3EE2CB72053A3AC00105435 /* Info.plist */,
+			);
+			path = CatMediaPickerControllerUITests;
+			sourceTree = "<group>";
+		};
+		C3EE2CC32053A3B000105435 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C37AD7C3205BC7EB00423FA7 /* Extensions */,
+				C3365A932054060B00A95C44 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3EE2C912053A3AB00105435 /* CatMediaPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3EE2CBA2053A3AC00105435 /* Build configuration list for PBXNativeTarget "CatMediaPicker" */;
+			buildPhases = (
+				C3EE2C8E2053A3AB00105435 /* Sources */,
+				C3EE2C8F2053A3AB00105435 /* Frameworks */,
+				C3EE2C902053A3AB00105435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatMediaPicker;
+			productName = CatMediaPickerController;
+			productReference = C3EE2C922053A3AB00105435 /* CatMediaPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3EE2CA52053A3AB00105435 /* CatMediaPickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3EE2CBD2053A3AC00105435 /* Build configuration list for PBXNativeTarget "CatMediaPickerTests" */;
+			buildPhases = (
+				C3EE2CA22053A3AB00105435 /* Sources */,
+				C3EE2CA32053A3AB00105435 /* Frameworks */,
+				C3EE2CA42053A3AB00105435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3EE2CA82053A3AB00105435 /* PBXTargetDependency */,
+			);
+			name = CatMediaPickerTests;
+			productName = CatMediaPickerControllerTests;
+			productReference = C3EE2CA62053A3AB00105435 /* CatMediaPickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3EE2CB02053A3AB00105435 /* CatMediaPickerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3EE2CC02053A3AC00105435 /* Build configuration list for PBXNativeTarget "CatMediaPickerUITests" */;
+			buildPhases = (
+				C3EE2CAD2053A3AB00105435 /* Sources */,
+				C3EE2CAE2053A3AB00105435 /* Frameworks */,
+				C3EE2CAF2053A3AB00105435 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3EE2CB32053A3AB00105435 /* PBXTargetDependency */,
+			);
+			name = CatMediaPickerUITests;
+			productName = CatMediaPickerControllerUITests;
+			productReference = C3EE2CB12053A3AB00105435 /* CatMediaPickerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3EE2C8A2053A3AB00105435 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = ImKcat;
+				TargetAttributes = {
+					C3EE2C912053A3AB00105435 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					C3EE2CA52053A3AB00105435 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3EE2C912053A3AB00105435;
+					};
+					C3EE2CB02053A3AB00105435 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3EE2C912053A3AB00105435;
+					};
+				};
+			};
+			buildConfigurationList = C3EE2C8D2053A3AB00105435 /* Build configuration list for PBXProject "CatMediaPicker" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3EE2C892053A3AB00105435;
+			productRefGroup = C3EE2C932053A3AB00105435 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3EE2C912053A3AB00105435 /* CatMediaPicker */,
+				C3EE2CA52053A3AB00105435 /* CatMediaPickerTests */,
+				C3EE2CB02053A3AB00105435 /* CatMediaPickerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3EE2C902053A3AB00105435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EE2CA02053A3AB00105435 /* LaunchScreen.storyboard in Resources */,
+				C3EE2C9D2053A3AB00105435 /* Assets.xcassets in Resources */,
+				C3EE2C9B2053A3AB00105435 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EE2CA42053A3AB00105435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EE2CAF2053A3AB00105435 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3EE2C8E2053A3AB00105435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F259CA205C1156007CF526 /* UIViewExtension.swift in Sources */,
+				C3EE2C982053A3AB00105435 /* ViewController.swift in Sources */,
+				C3365A902053E5AF00A95C44 /* CatMediaPickerHelper.swift in Sources */,
+				C3981E532056BF8200CE0AED /* CatPhotosPickerController.swift in Sources */,
+				C3EE2C962053A3AB00105435 /* AppDelegate.swift in Sources */,
+				C37AD7C5205BC80A00423FA7 /* StringExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EE2CA22053A3AB00105435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EE2CAB2053A3AB00105435 /* CatMediaPickerControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EE2CAD2053A3AB00105435 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EE2CB62053A3AB00105435 /* CatMediaPickerControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3EE2CA82053A3AB00105435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3EE2C912053A3AB00105435 /* CatMediaPicker */;
+			targetProxy = C3EE2CA72053A3AB00105435 /* PBXContainerItemProxy */;
+		};
+		C3EE2CB32053A3AB00105435 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3EE2C912053A3AB00105435 /* CatMediaPicker */;
+			targetProxy = C3EE2CB22053A3AB00105435 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3EE2C992053A3AB00105435 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3EE2C9A2053A3AB00105435 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3EE2C9E2053A3AB00105435 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3EE2C9F2053A3AB00105435 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3EE2CB82053A3AC00105435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3EE2CB92053A3AC00105435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3EE2CBB2053A3AC00105435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CatMediaPickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.CatMediaPickerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3EE2CBC2053A3AC00105435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CatMediaPickerController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.CatMediaPickerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C3EE2CBE2053A3AC00105435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CatMediaPickerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.CatMediaPickerControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatMediaPicker.app/CatMediaPicker";
+			};
+			name = Debug;
+		};
+		C3EE2CBF2053A3AC00105435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CatMediaPickerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.CatMediaPickerControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatMediaPicker.app/CatMediaPicker";
+			};
+			name = Release;
+		};
+		C3EE2CC12053A3AC00105435 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CatMediaPickerControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.CatMediaPickerControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatMediaPickerController;
+			};
+			name = Debug;
+		};
+		C3EE2CC22053A3AC00105435 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CatMediaPickerControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.imkcat.CatMediaPickerControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatMediaPickerController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3EE2C8D2053A3AB00105435 /* Build configuration list for PBXProject "CatMediaPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EE2CB82053A3AC00105435 /* Debug */,
+				C3EE2CB92053A3AC00105435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3EE2CBA2053A3AC00105435 /* Build configuration list for PBXNativeTarget "CatMediaPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EE2CBB2053A3AC00105435 /* Debug */,
+				C3EE2CBC2053A3AC00105435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3EE2CBD2053A3AC00105435 /* Build configuration list for PBXNativeTarget "CatMediaPickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EE2CBE2053A3AC00105435 /* Debug */,
+				C3EE2CBF2053A3AC00105435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3EE2CC02053A3AC00105435 /* Build configuration list for PBXNativeTarget "CatMediaPickerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EE2CC12053A3AC00105435 /* Debug */,
+				C3EE2CC22053A3AC00105435 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3EE2C8A2053A3AB00105435 /* Project object */;
+}
